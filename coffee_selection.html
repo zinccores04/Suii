@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Selection - Bean Boutique Coffee Shop</title>
+    <script src="header.js"></script>
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Bean <span>Bontique</span></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./Index.html" class="nav-link">Home</a></li>
+                <li><a href="./coffee_selection.html" class="nav-link active">Selection</a></li>
+                <li><a href="./equipment.html" class="nav-link">Equipment</a></li>
+                <li><a href="./event.html" class="nav-link">Events</a></li>
+                <li><a href="./special_offer.html" class="nav-link">Offers</a></li>
+                <li><a href="./cart.html" class="nav-link">Cart</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-container">
+            <form action="./search_results.html" method="get" id="search-form">
+                <input type="text" name="search" placeholder="Search..." aria-label="Search" id="search-input">
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+        </div>
+
+    </header>
+
+    <main>
+        <h1 class="coffee-selection-title">Our Coffee Selection</h1>
+
+        <section class="coffee-selection">
+            <div class="coffee-list">
+                <div class="coffee-card">
+                    <img src="./images/espresso.png" alt="Espresso Blend">
+                    <div class="coffee-card-content">
+                        <h2>Espresso Blend</h2>
+                        <p>A rich and full-bodied espresso with notes of chocolate and caramel. Perfect for a strong, satisfying coffee experience.</p>
+                        <p class="price">$12.99</p>
+                        <a href="./cart.html" class="add-to-cart-btn">Add to Cart</a>
+                        <a href="view_detail.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="coffee-card">
+                    <img src="./images/arabica.jpg" alt="Single-Origin Arabica">
+                    <div class="coffee-card-content">
+                        <h2>Single-Origin Arabica</h2>
+                        <p>This premium Arabica is sourced from the highlands, offering bright acidity and fruity notes for a smooth, vibrant taste.</p>
+                        <p class="price">$15.99</p>
+                        <a href="./cart.html" class="add-to-cart-btn">Add to Cart</a>
+                        <a href="view_detail.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="coffee-card">
+                    <img src="./images/house_blend.png" alt="House Blend">
+                    <div class="coffee-card-content">
+                        <h2>House Blend</h2>
+                        <p>Our signature house blend is balanced and smooth, ideal for a morning brew or an afternoon pick-me-up.</p>
+                        <p class="price">$10.99</p>
+                        <a href="./cart.html" class="add-to-cart-btn">Add to Cart</a>
+                        <a href="view_detail.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="coffee-card">
+                    <img src="./images/Colombian_supremo.jpg" alt="Colombian Supremo">
+                    <div class="coffee-card-content">
+                        <h2>Colombian Supremo</h2>
+                        <p>Known for its full-bodied flavor. Colombian Supremo offers a well-rounded coffee experience.</p>
+                        <p class="price">$12.99</p>
+                        <a href="./cart.html" class="add-to-cart-btn">Add to Cart</a>
+                        <a href="view_detail.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="coffee-card">
+                    <img src="./images/french_roast.jpg" alt="French Roast">
+                    <div class="coffee-card-content">
+                        <h2>French Roast</h2>
+                        <p>Dark and smoky, our French Roast delivers a rich, intense flavor with a bold finish.</p>
+                        <p class="price">$13.99</p>
+                        <a href="./cart.html" class="add-to-cart-btn">Add to Cart</a>
+                        <a href="view_detail.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="coffee-card">
+                    <img src="./images/delight_decaf.jpg" alt="Decaf Delight">
+                    <div class="coffee-card-content">
+                        <h2>Decaf Delight</h2>
+                        <p>Enjoy the rich flavor of our Decaf Delight without the caffeine kick. Perfect for late-night sipping.</p>
+                        <p class="price">$11.99</p>
+                        <a href="./cart.html" class="add-to-cart-btn">Add to Cart</a>
+                        <a href="view_detail.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="coffee-card">
+                    <img src="./images/chocolate_cake.jpg" alt="Chocolate Cake">
+                    <div class="coffee-card-content">
+                        <h2>Chocolate Cake</h2>
+                        <p>A rich and moist chocolate cake with layers of smooth chocolate ganache. A true delight for chocolate lovers.</p>
+                        <p class="price">$6.99</p>
+                        <a href="./cart.html" class="add-to-cart-btn">Add to Cart</a>
+                        <a href="view_detail.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+                <div class="coffee-card">
+                    <img src="./images/vanilla_cake.jpg" alt="Vanilla Cake">
+                    <div class="coffee-card-content">
+                        <h2>Vanilla Cake</h2>
+                        <p>A classic vanilla cake with a fluffy texture, topped with a delicate vanilla frosting. Perfect for any occasion.</p>
+                        <p class="price">$5.99</p>
+                        <a href="./cart.html" class="add-to-cart-btn">Add to Cart</a>
+                        <a href="view_detail.html" class="view-details-btn">View Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h2>Contact Us</h2>
+                <p>Located in 12, Aung Zay Ya Road, Thongwa.</p>
+                <p>+959799366569</p>
+                <p>BeanBotiqueCoffee@gmail.com</p>
+            </div>
+            <div class="footer-section explore-coffee">
+                <h2>Explore Our Coffee</h2>
+                <ul>
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./coffee_selection.html">Coffee Selection</a></li>
+                    <li><a href="./equipment.html">Brewing Equipment</a></li>
+                    <li><a href="./event.html">Events & Workshops</a></li>
+                    <li><a href="./special_offer.html">Special Offers and Subscriptions</a></li>
+                    <li><a href="./cart.html">Shopping Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section follow-us">
+                <h2>Follow Us On</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;Bean Boutique Coffee Shop Designed by Zin Myo Thu.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

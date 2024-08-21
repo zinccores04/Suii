@@ -1,0 +1,1207 @@
+            /* General Body Styles */
+            
+            body {
+                margin: 0;
+                font-family: 'Montserrat', sans-serif;
+                color: #000;
+                background-color: #f4f4f4;
+                box-sizing: border-box;
+            }
+            /* Header Styles */
+            
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                background-color: #000;
+            }
+            
+            #logo h1 {
+                color: chocolate;
+                font-size: 35spx;
+                font-weight: 600;
+            }
+            
+            #logo h1 span {
+                color: #ddd;
+            }
+            
+            .search-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            #search-form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                background-color: #000;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 600px;
+                width: 70%px;
+                margin: auto;
+            }
+            
+            #search-input {
+                border: none;
+                padding: 10px 15px;
+                font-size: 16px;
+                border-radius: 10px;
+                outline: none;
+                flex: 1;
+                background-color: #fff;
+                color: #333;
+            }
+            
+            .search-bar input[type="text"]::placeholder {
+                color: #aaa;
+            }
+            
+            #search-btn {
+                background-color: #fff;
+                color: #111;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+                margin-left: 10px;
+            }
+            
+            #search-btn:hover {
+                background-color: darkorange;
+            }
+            
+            nav ul {
+                list-style: none;
+                display: flex;
+            }
+            
+            nav ul li {
+                margin-right: 20px;
+            }
+            
+            nav ul li a {
+                color: #fff;
+                text-decoration: none;
+                padding: 5px 10px;
+                position: relative;
+                transition: background-color 0.3s ease;
+            }
+            
+            nav ul li a:hover {
+                border: 2px solid chocolate;
+            }
+            /* Active link styles: bold text and color change */
+            
+            nav ul li a.nav-link.active {
+                font-weight: bold;
+                color: chocolate;
+                /* Gold color for the active link */
+            }
+            /* Hero Section Styles */
+            
+            .hero {
+                background: url('./images/coffee-shop.jpg') no-repeat center center/cover;
+                color: #fff;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 4rem;
+                margin: 0;
+            }
+            
+            .hero h2 {
+                font-size: 2.5rem;
+                margin: 20px 0;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+                max-width: 600px;
+                line-height: 1.5;
+                margin-bottom: 20px;
+                color: chocolate;
+            }
+            /* Featured Coffee Section Styles */
+            
+            .coffee-selection-title {
+                text-align: center;
+            }
+            
+            .featured-coffee {
+                padding: 2rem;
+                background-color: #f4f4f4;
+                text-align: center;
+            }
+            
+            .featured-coffee h2 {
+                color: chocolate;
+                margin-bottom: 1.5rem;
+            }
+            
+            .coffee-list {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+            
+            .coffee-card {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .coffee-card img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .coffee-card-content {
+                padding: 15px;
+            }
+            
+            .coffee-card-content h3 {
+                color: #333;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            
+            .coffee-card-content p {
+                color: #666;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            .coffee-card-content .price {
+                color: chocolate;
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-top: 10px;
+            }
+            
+            .view-more-btn {
+                display: inline-block;
+                margin-top: 1.5rem;
+                padding: 0.75rem 1.5rem;
+                background-color: #ff6347;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+            
+            .view-more-btn:hover {
+                background-color: #ff4500;
+            }
+            /* Featured Brewing Equipment Section Styles */
+            
+            .featured-equipment {
+                padding: 2rem;
+                background-color: #f4f4f4;
+                text-align: center;
+            }
+            
+            .featured-equipment h2 {
+                color: chocolate;
+                margin-bottom: 1.5rem;
+            }
+            
+            .equipment-list {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+            
+            .equipment-card {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                max-width: 300px;
+                text-align: left;
+            }
+            
+            .equipment-card img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .equipment-card-content {
+                padding: 15px;
+            }
+            
+            .equipment-card-content h3 {
+                color: #333;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            
+            .equipment-card-content p {
+                color: #666;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            .equipment-card-content .price {
+                color: chocolate;
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-top: 10px;
+            }
+            
+            #map iframe {
+                margin-top: 2px;
+                width: 100%;
+                height: 100%;
+            }
+            /* Common Button Styles */
+            
+            .add-to-cart-btn,
+            .view-details-btn {
+                background-color: #ff6347;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 10px;
+                transition: background-color 0.3s ease;
+            }
+            
+            .add-to-cart-btn:hover,
+            .view-details-btn:hover {
+                background-color: #ff4500;
+            }
+            /* Container for buttons */
+            
+            .button-container {
+                display: flex;
+                gap: 10px;
+                /* Space between buttons */
+                margin-top: 10px;
+            }
+            /* Coffee Selection Section Styles */
+            
+            .coffee-selection-title {
+                color: chocolate;
+                margin: 10px;
+            }
+            
+            section h1 {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 2.5rem;
+            }
+            
+            .coffee-list {
+                display: flex;
+                flex-wrap: wrap;
+                /* Allow wrapping of cards */
+                justify-content: center;
+                /* Center cards horizontally */
+                gap: 20px;
+                /* Space between cards */
+                padding: 20px;
+            }
+            
+            .coffee-card {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                width: calc(33.333% - 20px);
+                /* Adjust to fit 3 cards per row */
+                max-width: 300px;
+                /* Max width for each card */
+                transition: transform 0.3s ease;
+                box-sizing: border-box;
+                /* Ensure padding is included in width */
+            }
+            
+            .coffee-card img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            
+            .coffee-card-content {
+                padding: 15px;
+                text-align: center;
+            }
+            
+            .coffee-card-content h2 {
+                color: #333;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            
+            .coffee-card-content p {
+                color: #666;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            .coffee-card-content .price {
+                color: chocolate;
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-top: 10px;
+            }
+            
+            .coffee-card:hover {
+                transform: scale(1.05);
+            }
+            /* Footer Styles */
+            
+            footer {
+                background-color: #000;
+                /* Adjust color to match your design */
+                color: #fff;
+                padding: 20px 0;
+                font-size: 14px;
+            }
+            
+            .footer-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .footer-section {
+                flex: 1;
+                padding: 10px;
+            }
+            
+            .footer-section h2 {
+                font-size: 18px;
+                margin-bottom: 15px;
+                color: #fff;
+            }
+            
+            .footer-section p,
+            .footer-section ul,
+            .footer-section li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            
+            .footer-section ul {
+                margin-top: 10px;
+            }
+            
+            .footer-section ul li {
+                margin-bottom: 10px;
+            }
+            
+            .footer-section ul li a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            
+            .footer-section ul li a:hover {
+                color: #ddd;
+            }
+            
+            .social-icons {
+                display: flex;
+                gap: 10px;
+            }
+            
+            .social-icons a {
+                color: #fff;
+                font-size: 20px;
+                transition: color 0.3s ease;
+            }
+            
+            .social-icons a:hover {
+                color: #ddd;
+            }
+            
+            .footer-bottom {
+                background-color: #000;
+                /* Darker shade for bottom part */
+                color: #ddd;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            /* Brewing Equipment Section */
+            
+            .equipment-main {
+                padding: 2rem;
+            }
+            
+            .brewing-equipment-title {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            
+            .brewing-equipment {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                justify-content: center;
+            }
+            
+            .equipment-card {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                max-width: 300px;
+                overflow: hidden;
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+            }
+            
+            .equipment-card img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .equipment-card-content {
+                padding: 1rem;
+            }
+            
+            .equipment-card-content h2 {
+                margin-top: 0;
+            }
+            
+            .equipment-card-content p {
+                margin: 0.5rem 0;
+            }
+            
+            .equipment-card-content ul {
+                list-style: none;
+                padding: 0;
+            }
+            
+            .equipment-card-content ul li {
+                background: url('./images/check-icon.png') no-repeat left center;
+                padding-left: 20px;
+                line-height: 1.6;
+            }
+            
+            .equipment-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            /* Events & Workshops Section Styles */
+            
+            .events-main {
+                padding: 2rem;
+                padding: 2rem;
+                background-color: #f4f4f4;
+            }
+            
+            .events-title {
+                text-align: center;
+                margin-bottom: 2rem;
+                color: chocolate;
+            }
+            
+            .events-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                justify-content: center;
+            }
+            
+            .event-card {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                max-width: 300px;
+                overflow: hidden;
+                text-align: center;
+            }
+            
+            .event-card img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .event-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            .event-card-content {
+                padding: 1rem;
+            }
+            
+            .event-card-content h2 {
+                margin-top: 0;
+                color: #333;
+                font-size: 1.5rem;
+            }
+            
+            .event-card-content p {
+                margin: 0.5rem 0;
+                color: #666;
+            }
+            
+            .register-btn {
+                background-color: #ff6347;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 10px;
+                transition: background-color 0.3s ease;
+            }
+            
+            .register-btn:hover {
+                background-color: #ff4500;
+            }
+            /* Special Offers & Subscriptions Section Styles */
+            
+            .offers-main {
+                padding: 2rem;
+                background-color: #f4f4f4;
+            }
+            
+            .offers-title {
+                text-align: center;
+                margin-bottom: 2rem;
+                color: chocolate;
+            }
+            
+            .offers-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                justify-content: center;
+            }
+            
+            .offer-card {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                max-width: 300px;
+                overflow: hidden;
+                text-align: center;
+            }
+            
+            .offer-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            .offer-card img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .offer-card-content {
+                padding: 1rem;
+            }
+            
+            .offer-card-content h2 {
+                margin-top: 0;
+                color: #333;
+                font-size: 1.5rem;
+            }
+            
+            .offer-card-content p {
+                margin: 0.5rem 0;
+                color: #666;
+            }
+            
+            .offer-card-content ul {
+                list-style: none;
+                padding: 0;
+                margin: 1rem 0;
+            }
+            
+            .offer-card-content ul li {
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
+                color: #333;
+            }
+            
+            .offer-btn {
+                background-color: #D4AF37;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 10px;
+                transition: background-color 0.3s ease;
+            }
+            
+            .offer-btn:hover {
+                background-color: #b89725;
+            }
+            /* Shopping Cart Section Styles */
+            
+            .cart-main {
+                padding: 2rem;
+                background-color: #f4f4f4;
+            }
+            
+            .cart-title {
+                text-align: center;
+                margin-bottom: 2rem;
+                color: chocolate;
+            }
+            
+            .cart-list {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-bottom: 2rem;
+            }
+            
+            .cart-item {
+                display: flex;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 1rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            
+            .cart-item img {
+                width: 200px;
+                height: auto;
+                margin-right: 1rem;
+                border-radius: 5px;
+            }
+            
+            .cart-item:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            .cart-item-content {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            
+            .cart-item-content h2 {
+                margin: 0;
+                font-size: 1.5rem;
+                color: #333;
+            }
+            
+            .cart-item-content .price {
+                color: chocolate;
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+            
+            .quantity {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+            }
+            
+            .quantity label {
+                margin-right: 0.5rem;
+                font-size: 1rem;
+            }
+            
+            .quantity input {
+                width: 48px;
+                padding: 0.25rem;
+                font-size: 1rem;
+                text-align: center;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            
+            .remove-btn {
+                background-color: #ff6347;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 5px;
+                text-align: center;
+                transition: background-color 0.3s ease;
+                width: 100px;
+            }
+            
+            .remove-btn:hover {
+                background-color: #ff4500;
+            }
+            
+            .cart-summary {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 1rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+            
+            .cart-summary h2 {
+                margin-bottom: 1rem;
+                color: chocolate;
+                font-size: 1.5rem;
+            }
+            
+            .cart-summary p {
+                font-size: 1.2rem;
+                margin: 0.5rem 0;
+            }
+            
+            .checkout-btn {
+                background-color: #D4AF37;
+                color: #fff;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 5px;
+                display: inline-block;
+                margin-top: 1rem;
+                transition: background-color 0.3s ease;
+            }
+            
+            .checkout-btn:hover {
+                background-color: #b89725;
+            }
+            /* Contact Page Styles */
+            
+            .contact-main {
+                padding: 2rem;
+                background-color: #f4f4f4;
+            }
+            
+            .contact-title {
+                text-align: center;
+                margin-bottom: 2rem;
+                color: chocolate;
+            }
+            
+            .contact-info {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+            
+            .contact-details {
+                flex: 1;
+                min-width: 300px;
+            }
+            
+            .contact-details h2 {
+                margin-bottom: 1rem;
+                color: #333;
+            }
+            
+            .contact-details p {
+                margin: 0.5rem 0;
+                font-size: 1.1rem;
+                color: #666;
+            }
+            
+            .contact-details i {
+                color: chocolate;
+                margin-right: 0.5rem;
+            }
+            
+            .contact-form {
+                flex: 2;
+                min-width: 300px;
+            }
+            
+            .contact-form h2 {
+                margin-bottom: 1rem;
+                color: #333;
+            }
+            
+            .contact-form label {
+                display: block;
+                margin-bottom: 0.5rem;
+                color: #333;
+            }
+            
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%;
+                padding: 0.75rem;
+                margin-bottom: 1rem;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            
+            .contact-form textarea {
+                resize: vertical;
+            }
+            
+            .submit-btn {
+                background-color: #D4AF37;
+                color: #fff;
+                padding: 0.75rem 1.5rem;
+                text-decoration: none;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            
+            .submit-btn:hover {
+                background-color: #b89725;
+            }
+            /* Location Section Styles */
+            
+            .location {
+                padding: 2rem;
+                background-color: #fff;
+                text-align: center;
+            }
+            
+            .location .container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            
+            .location h2 {
+                color: chocolate;
+                margin-bottom: 1.5rem;
+            }
+            
+            .location p {
+                color: #666;
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            #map {
+                width: 100%;
+                height: 300px;
+                background-color: #ddd;
+            }
+            /* Product Detail Page Styles */
+            
+            .product-detail {
+                display: flex;
+                gap: 2rem;
+                padding: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .product-images {
+                flex: 1;
+            }
+            
+            .product-images img {
+                width: 100%;
+                border-radius: 10px;
+            }
+            
+            .product-info {
+                flex: 2;
+                padding: 1rem;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+            
+            .product-info h2 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            
+            .product-info .price {
+                font-size: 1.5rem;
+                color: #d9534f;
+                margin-bottom: 1rem;
+            }
+            
+            .product-info .description {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .product-info p {
+                margin-bottom: 0.5rem;
+            }
+            
+            .product-info .btn-add-to-cart {
+                display: inline-block;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+                background-color: #ff6347;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            
+            .product-info .btn-add-to-cart:hover {
+                background-color: #ff4500;
+            }
+            /* Hover Effect for Equipment Card (Similar to Product Card) */
+            
+            .equipment-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+            
+            .popup {
+                display: block;
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 300px;
+                padding: 20px;
+                background-color: white;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+                text-align: center;
+            }
+            /* Close button */
+            
+            .close-btn {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            /* Order and Subscribe buttons */
+            
+            .popup button {
+                background-color: #ff6347;
+                color: black;
+                padding: 10px 20px;
+                margin: 10px 5px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            
+            .popup button:hover {
+                background-color: #ff4500;
+            }
+            /* Overlay */
+            
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 500;
+            }
+            /* Base styles for all screen sizes */
+            
+            .cart-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            
+            .item-info {
+                flex: 1;
+                margin-right: 20px;
+            }
+            
+            .item-remove {
+                text-align: right;
+            }
+            /* Base styles for small screens (mobile first) */
+            /* Mobile Styles */
+            
+            @media (max-width: 599px) {
+                header,
+                .footer-container,
+                .contact-info,
+                .product-detail {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 10px;
+                    /* Add padding for mobile */
+                }
+                #logo h1,
+                .hero h1 {
+                    font-size: 30px;
+                    /* Adjusted for mobile */
+                    max-width: 200%;
+                    /* Ensure text doesn't overflow */
+                }
+                nav ul,
+                .coffee-card,
+                .equipment-card,
+                .event-card,
+                .offer-card,
+                .contact-form {
+                    width: 100%;
+                    /* Element takes up the full width of its container */
+                    margin-bottom: 10px;
+                    /* Adds spacing below the element */
+                    max-width: 100%;
+                    /* Ensures the element does not exceed the width of its container */
+                }
+                #search-form,
+                #search-input {
+                    width: 100%;
+                    /* Element takes up the full width of its container */
+                    margin-bottom: 10px;
+                    /* Adds spacing below the element */
+                    max-width: 100%;
+                    /* Ensures the element does not exceed the width of its container */
+                }
+                .search-btn {
+                    width: 20%;
+                    margin-bottom: 10px;
+                    max-width: 40%;
+                }
+                .popup {
+                    width: 80%;
+                    /* Further reduced for a narrower appearance */
+                    margin-bottom: 20px;
+                    max-width: 350px;
+                    /* Slightly reduced max-width */
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+                nav ul {
+                    flex-direction: column;
+                }
+                nav ul li {
+                    margin-bottom: 10px;
+                }
+                .hero h2 {
+                    font-size: 1.8rem;
+                    max-width: 100%;
+                    /* Ensure text wraps properly */
+                }
+                .menu-icon {
+                    display: flex;
+                }
+                button,
+                .button-class {
+                    padding: 10px 15px;
+                    width: 100%;
+                    max-width: 200px;
+                    /* Prevent buttons from stretching too much */
+                    min-width: 120px;
+                    /* Ensure buttons are still usable */
+                }
+            }
+            /* Tablet Styles */
+            
+            @media (min-width: 600px) and (max-width: 1023px) {
+                header,
+                nav ul,
+                .footer-container,
+                .contact-info,
+                .product-detail {
+                    flex-direction: row;
+                    padding: 15px;
+                    /* Adjust padding for tablet */
+                }
+                #logo h1,
+                .hero h1 {
+                    font-size: 30px;
+                    /* Adjusted for tablets */
+                    max-width: 00%;
+                    /* Ensure text doesn't overflow */
+                }
+                #search-form,
+                #search-input {
+                    width: 80%;
+                    max-width: 600px;
+                    /* Limit the width of search input */
+                    min-width: 250px;
+                    /* Ensure input doesn't get too small */
+                }
+                nav ul li {
+                    margin-right: 15px;
+                }
+                .hero h2 {
+                    font-size: 2rem;
+                    max-width: 100%;
+                    /* Ensure text wraps properly */
+                }
+                button,
+                .button-class {
+                    padding: 10px 20px;
+                    max-width: 250px;
+                    /* Limit button width */
+                    min-width: 150px;
+                    /* Ensure buttons are usable */
+                }
+            }
+            /* Desktop Styles */
+            
+            @media (min-width: 1024px) {
+                header,
+                .footer-container,
+                .product-detail {
+                    padding: 20px;
+                }
+                #logo h1,
+                .hero h1 {
+                    font-size: 35px;
+                    /* Adjusted for desktop */
+                    max-width: 100%;
+                    /* Ensure text doesn't overflow */
+                }
+                #search-form,
+                #search-input {
+                    width: 70%;
+                    max-width: 800px;
+                    /* Limit width to prevent overflow */
+                    min-width: 300px;
+                    /* Ensure input is usable */
+                }
+                nav ul li {
+                    margin-right: 20px;
+                }
+                .hero h2 {
+                    font-size: 2.5rem;
+                    max-width: 100%;
+                    /* Ensure text wraps properly */
+                }
+                .footer-container {
+                    max-width: 1200px;
+                    width: 100%;
+                    /* Ensure footer container stretches but doesn't exceed max-width */
+                }
+                button,
+                .button-class {
+                    padding: 10px 20px;
+                    max-width: 300px;
+                    /* Limit button width */
+                    min-width: 150px;
+                    /* Ensure buttons remain usable */
+                }
+            }
